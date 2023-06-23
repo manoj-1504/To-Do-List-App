@@ -1,0 +1,133 @@
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #000000, #000);
+}
+
+.container {
+  min-width: 280px;
+  background: rgba(255, 255, 255, 0.562);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .header-container {
+  width: 100%;
+  min-height: 80px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5f1818;
+  color: #adadad;
+}
+
+.container .input {
+  min-width: 100%;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .input input {
+    min-width: 200px;
+    height: 32px;
+    background-color: #202020b6;
+    color: #fff;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.container .input input::placeholder{
+  color:#fff;
+  opacity: 0.7;
+}
+
+.container .input button{
+    min-width: 50px;
+    height: 32px;
+    outline: none;
+    border: none;
+    background-color: #5f1818;
+    color: #bbbaba;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+#list-container{
+  width: 280px;
+  min-height: 40px;
+  margin-top: 15px;
+  padding: 20px 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: rgba(255, 255, 255, 0.562);
+  position: relative;
+}
+
+#list-container ul {
+  list-style-type: none;
+}
+
+#list-container ul li{
+  list-style-type: none;
+  margin:5px 0 0 0 ;
+  background-color: #202020b6;
+  color: #d1cfcf;
+  width: 85%;
+  min-height:25px ;
+  line-height: 25px;
+  padding-left: 10px;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  word-break: break-all;
+  word-wrap:break-word ;
+  position: relative;
+}
+
+ul li span{
+  position: absolute;
+  right: -35px;
+  top: 0px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(170, 169, 169);
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+ul li span:hover{
+  background-color: #1d1c1c65;
+}
+
+
